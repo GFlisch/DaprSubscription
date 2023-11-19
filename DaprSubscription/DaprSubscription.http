@@ -1,0 +1,9 @@
+@DaprSubscription_HostAddress = http://localhost:5152
+
+GET {{DaprSubscription_HostAddress}}/dapr/subscribe
+Accept: application/json
+
+
+POST {{DaprSubscription_HostAddress}}/dapr/subscribe
+Accept: application/json
+###

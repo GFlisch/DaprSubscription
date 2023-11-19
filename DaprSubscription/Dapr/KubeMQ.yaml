@@ -1,0 +1,18 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: kubemq
+spec:
+  type: pubsub.kubemq
+  version: v1
+  metadata:
+    - name: address
+      value: "localhost:40000"
+    - name: store
+      value: true
+    - name: group
+      value: test
+    - name: clientID
+      value: DaprDemo
+    - name: subscriptionType
+      value: StartFromFirstEvent
